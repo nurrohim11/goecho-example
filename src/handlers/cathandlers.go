@@ -6,12 +6,12 @@ import (
 	"log"
 	"net/http"
 
-	"vo"
+	"echo-example/src/vo"
 
 	"github.com/labstack/echo"
 )
 
-//http://localhost:8000/cats/json?name=arnold&type=fluffy
+// http://localhost:8000/cats/json?name=arnold&type=fluffy
 func GetCats(c echo.Context) error {
 	catName := c.QueryParam("name")
 	catType := c.QueryParam("type")
